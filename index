@@ -1,43 +1,69 @@
-import React from "react";
-
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-12">
-      <div className="max-w-3xl text-center">
-        <h1 className="text-5xl font-extrabold tracking-tight uppercase mb-4 text-orange-500">
-          Les Déclencheurs
-        </h1>
-        <p className="text-xl font-medium text-white mb-8">
-          On allume la mèche. À toi de tout exploser.
-        </p>
-
-        <div className="my-12">
-          <img
-            src="/logo-declencheurs.png"
-            alt="Logo Les Déclencheurs"
-            className="w-48 mx-auto"
-          />
-        </div>
-
-        <section className="mt-12 space-y-6">
-          <p className="text-lg">
-            Les Déclencheurs, c’est une zone libre d’apprentissage pour allumer les idées, pas les cerveaux en veille. On y parle d’argent, décologie, de justice sociale, d’avenir. Pas avec des PowerPoint ennuyeux, mais avec des gens du terrain, des formateurs mutants, et une vision radicale de l’éducation.
-          </p>
-
-          <p className="text-lg">
-            On te file pas des réponses toutes faites. On t’aide à poser les bonnes bombes dans ta tête. Tu veux apprendre à gérer ton fric, comprendre le système, faire de la transition durable et sociale ton terrain de jeu ? T’es au bon endroit.
-          </p>
-        </section>
-
-        <div className="mt-12">
-          <a
-            href="#"
-            className="inline-block bg-orange-500 text-black font-bold text-lg px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 transition"
-          >
-            Rejoindre la prochaine session
-          </a>
-        </div>
-      </div>
-    </main>
-  );
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Déclencheurs</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'League Spartan', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #ff6600;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .cta {
+      background-color: #ff6600;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(255, 102, 0, 0.5);
+      transition: background-color 0.3s ease;
+    }
+    .cta:hover {
+      background-color: #e65c00;
+    }
+    img {
+      width: 150px;
+      margin: 2rem auto;
+    }
+    section {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Les Déclencheurs</h1>
+    <p><strong>On allume la mèche. À toi de tout exploser.</strong></p>
+    <img src="/logo-declencheurs.png" alt="Logo Les Déclencheurs">
+    <section>
+      <p>Les Déclencheurs, c’est une zone libre d’apprentissage pour allumer les idées, pas les cerveaux en veille. On y parle d’argent, d’écologie, de justice sociale, d’avenir. Pas avec des PowerPoint ennuyeux, mais avec des gens du terrain, des formateurs mutants, et une vision radicale de l’éducation.</p>
+      <p>On te file pas des réponses toutes faites. On t’aide à poser les bonnes bombes dans ta tête. Tu veux apprendre à gérer ton fric, comprendre le système, faire de la transition durable et sociale ton terrain de jeu ? T’es au bon endroit.</p>
+    </section>
+    <a href="#" class="cta">Rejoindre la prochaine session</a>
+  </main>
+</body>
+</html>
