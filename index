@@ -1,0 +1,43 @@
+import React from "react";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-12">
+      <div className="max-w-3xl text-center">
+        <h1 className="text-5xl font-extrabold tracking-tight uppercase mb-4 text-orange-500">
+          Les Déclencheurs
+        </h1>
+        <p className="text-xl font-medium text-white mb-8">
+          On allume la mèche. À toi de tout exploser.
+        </p>
+
+        <div className="my-12">
+          <img
+            src="/logo-declencheurs.png"
+            alt="Logo Les Déclencheurs"
+            className="w-48 mx-auto"
+          />
+        </div>
+
+        <section className="mt-12 space-y-6">
+          <p className="text-lg">
+            Les Déclencheurs, c’est une zone libre d’apprentissage pour allumer les idées, pas les cerveaux en veille. On y parle d’argent, décologie, de justice sociale, d’avenir. Pas avec des PowerPoint ennuyeux, mais avec des gens du terrain, des formateurs mutants, et une vision radicale de l’éducation.
+          </p>
+
+          <p className="text-lg">
+            On te file pas des réponses toutes faites. On t’aide à poser les bonnes bombes dans ta tête. Tu veux apprendre à gérer ton fric, comprendre le système, faire de la transition durable et sociale ton terrain de jeu ? T’es au bon endroit.
+          </p>
+        </section>
+
+        <div className="mt-12">
+          <a
+            href="#"
+            className="inline-block bg-orange-500 text-black font-bold text-lg px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 transition"
+          >
+            Rejoindre la prochaine session
+          </a>
+        </div>
+      </div>
+    </main>
+  );
+}
